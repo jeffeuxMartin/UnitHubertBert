@@ -84,11 +84,12 @@ data_collator = DataCollatorForLanguageModeling(
 training_args = TrainingArguments(
     output_dir="./JeffHubBERTo",
     overwrite_output_dir=True,
-    num_train_epochs=100,
+    num_train_epochs=500,
     per_gpu_train_batch_size=32,
-    save_steps=1_000,
-    save_total_limit=5,
+    save_steps=3_000,
+    save_total_limit=10,
     prediction_loss_only=True,
+    optim=torch.optim.AdamW,
 )
 
 trainer = Trainer(
