@@ -89,7 +89,7 @@ training_args = TrainingArguments(
     save_steps=3_000,
     save_total_limit=10,
     prediction_loss_only=True,
-    optim=torch.optim.AdamW,
+    optim='adamw_torch',
 )
 
 trainer = Trainer(
