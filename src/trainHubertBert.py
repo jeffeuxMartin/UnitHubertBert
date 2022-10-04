@@ -17,19 +17,19 @@ def jeff_init_tokenizer(tokenizer_file=None):
     # or use the RobertaTokenizer from `transformers` directly.
             
     tokenizer.unk_token = "[UNK]"
-    tokenizer.unk_token_id = 0
+    # tokenizer.unk_token_id = 0
     tokenizer.cls_token = "[CLS]"
-    tokenizer.cls_token_id = 1
+    # tokenizer.cls_token_id = 1
     tokenizer.bos_token = "[CLS]"
-    tokenizer.bos_token_id = 1
+    # tokenizer.bos_token_id = 1
     tokenizer.sep_token = "[SEP]"
-    tokenizer.sep_token_id = 2
+    # tokenizer.sep_token_id = 2
     tokenizer.eos_token = "[SEP]"
-    tokenizer.eos_token_id = 2
+    # tokenizer.eos_token_id = 2
     tokenizer.pad_token = "[PAD]"
-    tokenizer.pad_token_id = 3
+    # tokenizer.pad_token_id = 3
     tokenizer.mask_token = "[MASK]"
-    tokenizer.mask_token_id = 4
+    # tokenizer.mask_token_id = 4
     
     return tokenizer
     
